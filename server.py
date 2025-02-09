@@ -4,7 +4,7 @@ from _thread import start_new_thread
 # Настраиваем сервер
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-server.bind(("127.0.0.1", 12345))  # IP и порт
+server.bind(("92.51.47.80", 12345))  # IP и порт
 server.listen(5)
 
 print("Сервер запущен и прослушивает соединения...")
